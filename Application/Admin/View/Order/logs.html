@@ -1,0 +1,173 @@
+<extend name="Public/base"/>
+
+
+
+<block name="body">
+    <style>
+        .btn_active{
+            background: #00A1CB;
+        }
+    </style>
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            订单操作日志
+        </h2>
+    </div>
+
+    <!-- 按钮工具栏 -->
+    <div class="cf">
+        <div class="fl">
+            <a    href="{:U("Order/logs")}" <if condition="I('pay') eq ''"> class="btn btn_active"<else/>class="btn"</if> > 全部日志</a>
+
+        </div>
+
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <!--<div class="drop-down" style="marign-right:40px;">-->
+                    <?php  $type= I('type');?>
+                    <select name="type" class="search-input">
+                        <option value="">请选择操作方式</option>
+                        <option value="1" <if condition="$type eq  1"> selected</if>>设置付款</option>
+                        <option value="2" <if condition="$type eq  2"> selected</if>>设置同步 </option>
+                        <option value="3" <if condition="$type eq  3"> selected</if>>解除非法攻击 </option>
+                    </select>
+                <!--</div>-->
+                <input type="text" id="time-start" name="time-start" class="text input-2x" value="{:I('time-start')}" placeholder="起始时间"  style="float: left;"/>
+
+                <input type="text" id="time-end" name="time-end" class="text input-2x" value="{:I('time-end')}"  placeholder="结束时间" style="float: left;" />
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入订单编号/用户名">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('Order/logs','pay='.I('pay',0))}"><i class="btn-search"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table class="">
+            <thead>
+            <tr>
+                <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+                <th class="">用户名</th>
+                <th class="">订单号</th>
+
+                <th class="">操作方式</th>
+                <th class="">操作时间</th>
+                <th class="">操作ip</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="logs.lists" id="vo">
+                <tr>
+                    <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}" /></td>
+                    <td>{:get_username($vo.uid)} </td>
+                    <td>{$vo.order_id}</td>
+                    <td>
+                        <switch name="vo.type">
+                            <case value="1">
+                                <span style="color:Red">设置支付</span>
+                            </case>
+                            <case value="2">
+                                <span style="color:green">设置同步</span>
+                            </case>
+                            <case value="3">
+                                <span style="color:green">解除内鬼</span>
+                            </case>
+                        </switch>
+                    </td>
+                    <td><span>{$vo.create_time|time_format}</span></td>
+                    <td><span>{$vo.ip}</span></td>
+
+
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <!-- 分页 -->
+    <div class="page">
+        {$order._page}
+    </div>
+    </div>
+
+</block>
+<block name="script">
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            //搜索功能
+            $("#search").click(function(){
+                var url = $(this).attr('url');
+                var status = $("#sch-sort-txt").attr("data");
+                var query  = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+                query = query.replace(/^&/g,'');
+
+                var sel  = $('.search-form').find('select').serialize();
+                sel = sel.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+                sel = sel.replace(/^&/g,'');
+                if(status != ''){
+                    query += 'status=' + status + "&" + query;
+                }
+                if( url.indexOf('?')>0 ){
+                    url += '&' + query;
+                }else{
+                    url += '?' + query;
+                }
+                if(sel != ''){
+                    url += '&' + sel;
+                }
+                window.location.href = url;
+            });
+
+            /* 状态搜索子菜单 */
+            $(".search-form").find(".drop-down").hover(function(){
+                $("#sub-sch-menu").removeClass("hidden");
+            },function(){
+                $("#sub-sch-menu").addClass("hidden");
+            });
+            $("#sub-sch-menu li").find("a").each(function(){
+                $(this).click(function(){
+                    var text = $(this).text();
+                    $("#sch-sort-txt").text(text).attr("data",$(this).attr("value"));
+                    $("#sub-sch-menu").addClass("hidden");
+                })
+            });
+
+            //回车自动提交
+            $('.search-form').find('input').keyup(function(event){
+                if(event.keyCode===13){
+                    $("#search").click();
+                }
+            });
+
+            $('#time-start').datetimepicker({
+                format: 'yyyy-mm-dd HH:ii:ss',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+
+            $('#time-end').datetimepicker({
+                format: 'yyyy-mm-dd hh:ii:ss',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true,
+                pickerPosition:'bottom-left'
+            })
+            highlight_subnav('{:U("Order/logs")}');
+
+        })
+    </script>
+</block>

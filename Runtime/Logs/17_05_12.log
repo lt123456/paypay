@@ -1,0 +1,1141 @@
+[ 2017-05-12T00:00:08+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008303s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000824s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007521s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913608 AND 1494518288 ) )  [ RunTime:0.046223s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035390s ]
+
+[ 2017-05-12T00:00:38+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009402s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000601s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008566s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913638 AND 1494518318 ) )  [ RunTime:0.041912s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.036892s ]
+
+[ 2017-05-12T00:01:08+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006935s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000937s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007707s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913668 AND 1494518348 ) )  [ RunTime:0.047455s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037146s ]
+
+[ 2017-05-12T00:01:38+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009492s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000790s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007658s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913698 AND 1494518378 ) )  [ RunTime:0.042801s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.039062s ]
+
+[ 2017-05-12T00:02:08+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009774s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000447s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008195s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913728 AND 1494518408 ) )  [ RunTime:0.056455s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.100368s ]
+
+[ 2017-05-12T00:02:38+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010779s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000442s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.015616s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913758 AND 1494518438 ) )  [ RunTime:0.037180s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.034522s ]
+
+[ 2017-05-12T00:03:09+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006964s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000711s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007231s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913789 AND 1494518469 ) )  [ RunTime:0.044039s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.050306s ]
+
+[ 2017-05-12T00:03:39+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007297s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000916s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008139s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913819 AND 1494518499 ) )  [ RunTime:0.038586s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035332s ]
+
+[ 2017-05-12T00:04:09+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006668s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001180s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007005s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913849 AND 1494518529 ) )  [ RunTime:0.041749s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.034204s ]
+
+[ 2017-05-12T00:04:39+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.053358s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001390s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.036856s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913879 AND 1494518559 ) )  [ RunTime:0.037916s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035874s ]
+
+[ 2017-05-12T00:05:09+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010511s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001547s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009660s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913909 AND 1494518589 ) )  [ RunTime:0.043823s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.040841s ]
+
+[ 2017-05-12T00:05:38+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010842s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001017s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009243s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913938 AND 1494518618 ) )  [ RunTime:0.041747s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037783s ]
+
+[ 2017-05-12T00:06:09+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006884s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000808s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007223s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913969 AND 1494518649 ) )  [ RunTime:0.040465s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035427s ]
+
+[ 2017-05-12T00:06:39+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007568s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001228s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008450s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493913999 AND 1494518679 ) )  [ RunTime:0.037595s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.044432s ]
+
+[ 2017-05-12T00:07:09+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008234s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000570s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008002s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914029 AND 1494518709 ) )  [ RunTime:0.046460s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.036089s ]
+
+[ 2017-05-12T00:07:39+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007461s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000928s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008377s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914059 AND 1494518739 ) )  [ RunTime:0.038534s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.038321s ]
+
+[ 2017-05-12T00:07:47+08:00 ] 127.0.0.1 /master.php?s=/Payment/index.html
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006850s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000804s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/index%' ) LIMIT 1   [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007179s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.000950s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000810s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.001380s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.001061s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001135s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008397s ]
+SQL: SELECT `id`,`method`,`name`,`url`,`paytype`,`status` FROM `spark_payment` ORDER BY sort asc  [ RunTime:0.001536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: order D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5c636c6ad8a7a82c22dd0dcf90e0f6d0.php 第 176 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002468s ]
+
+[ 2017-05-12T00:07:47+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008219s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000523s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009534s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914067 AND 1494518747 ) )  [ RunTime:0.077323s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.050756s ]
+
+[ 2017-05-12T00:07:52+08:00 ] 127.0.0.1 /master.php?s=/Payment/index.html
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010221s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001519s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/index%' ) LIMIT 1   [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008628s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.000808s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000790s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.000823s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000650s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000628s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008893s ]
+SQL: SELECT `id`,`method`,`name`,`url`,`paytype`,`status` FROM `spark_payment` ORDER BY sort asc  [ RunTime:0.001301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: order D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5c636c6ad8a7a82c22dd0dcf90e0f6d0.php 第 176 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002458s ]
+
+[ 2017-05-12T00:07:52+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.019597s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001164s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009709s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914072 AND 1494518752 ) )  [ RunTime:0.076193s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.046424s ]
+
+[ 2017-05-12T00:07:58+08:00 ] 127.0.0.1 /master.php?s=/Payment/edit/id/46.html
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008749s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000994s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/edit%' ) LIMIT 1   [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009471s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=132 ) LIMIT 1   [ RunTime:0.001070s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.001395s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000756s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.000928s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000717s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000880s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006768s ]
+SQL: SELECT `id`,`method`,`name`,`config`,`field`,`status`,`url`,`paytype`,`is_display`,`sort`,`domain`,`shop_url` FROM `spark_payment` WHERE ( `id` = 46 ) LIMIT 1   [ RunTime:0.000980s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: meta_title D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5d35e8b9f8f14104d7baca73f26421aa.php 第 5 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5d35e8b9f8f14104d7baca73f26421aa.php 第 124 行.
+NOTIC: [8] Use of undefined constant N - assumed 'N' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5d35e8b9f8f14104d7baca73f26421aa.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002908s ]
+
+[ 2017-05-12T00:07:58+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008294s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001080s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001904s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008318s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914078 AND 1494518758 ) )  [ RunTime:0.080775s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.058544s ]
+
+[ 2017-05-12T00:08:20+08:00 ] 127.0.0.1 /master.php?s=/Payment/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006808s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000778s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/edit%' ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008898s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=132 ) LIMIT 1   [ RunTime:0.000874s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.001243s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.001355s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.001040s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000661s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000502s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000536s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\PaymentController.class.php on line 84 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008515s ]
+SQL: UPDATE `spark_payment` SET `method`='jumoyunzfbWap',`name`='巨米云支付宝Wap',`config`='a:2:{s:6:\"parter\";s:10:\"7771069008\";s:7:\"private\";s:32:\"NJ61ZFNJ3SgLl78GpFezCiWU9iOWlpnC\";}',`sort`=0,`status`='Y',`url`='/index.php/Jumiyun/AliSubmit',`domain`='',`shop_url`='',`id`=46 WHERE ( `id` = 46 ) [ RunTime:0.000671s ]
+
+[ 2017-05-12T00:08:22+08:00 ] 127.0.0.1 /master.php?s=/Payment/index.html
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006914s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000551s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/index%' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006690s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.000588s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000553s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000628s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007609s ]
+SQL: SELECT `id`,`method`,`name`,`url`,`paytype`,`status` FROM `spark_payment` ORDER BY sort asc  [ RunTime:0.001056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: order D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5c636c6ad8a7a82c22dd0dcf90e0f6d0.php 第 176 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003014s ]
+
+[ 2017-05-12T00:08:22+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004382s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010310s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.003985s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.002082s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.011305s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914102 AND 1494518782 ) )  [ RunTime:0.065727s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.055902s ]
+
+[ 2017-05-12T00:08:52+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008587s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000884s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008290s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914132 AND 1494518812 ) )  [ RunTime:0.039925s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.048505s ]
+
+[ 2017-05-12T00:09:22+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009526s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000785s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007352s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914162 AND 1494518842 ) )  [ RunTime:0.040019s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.034937s ]
+
+[ 2017-05-12T00:09:52+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009661s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.002432s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007266s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914192 AND 1494518872 ) )  [ RunTime:0.042975s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.045979s ]
+
+[ 2017-05-12T00:10:22+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.009555s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001081s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006444s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914222 AND 1494518902 ) )  [ RunTime:0.041686s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.047195s ]
+
+[ 2017-05-12T00:10:42+08:00 ] 127.0.0.1 /master.php?s=/Payment/index.html
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008781s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001649s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Payment/index%' ) LIMIT 1   [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.060138s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=126 ) LIMIT 1   [ RunTime:0.001461s ]
+SQL: SELECT `id`,`pid`,`title` FROM `spark_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.001136s ]
+SQL: SELECT DISTINCT  `group` FROM `spark_menu` WHERE ( pid = 122 )  [ RunTime:0.001241s ]
+SQL: SELECT `id`,`url` FROM `spark_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000808s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000536s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `spark_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006480s ]
+SQL: SELECT `id`,`method`,`name`,`url`,`paytype`,`status` FROM `spark_payment` ORDER BY sort asc  [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined variable: order D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Admin\5c636c6ad8a7a82c22dd0dcf90e0f6d0.php 第 176 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2017-05-12T00:10:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.017956s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000843s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.010875s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914242 AND 1494518922 ) )  [ RunTime:0.102792s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.096225s ]
+
+[ 2017-05-12T00:10:43+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008374s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000968s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003446s ]
+
+[ 2017-05-12T00:10:43+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008062s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000956s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2017-05-12T00:11:00+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007733s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000816s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-05-12T00:11:04+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.009849s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.001490s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Use of undefined constant WEB_URL - assumed 'WEB_URL' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\2d36a82f96e353449c1a724d27f47674.php 第 260 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001936s ]
+
+[ 2017-05-12T00:11:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008729s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001283s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008348s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914273 AND 1494518953 ) )  [ RunTime:0.039063s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.039161s ]
+
+[ 2017-05-12T00:11:14+08:00 ] 127.0.0.1 /index.php?s=/Index/ordersubmit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `spark_config` [ RunTime:0.012511s ]
+SQL: SELECT `type`,`name`,`value` FROM `spark_config` WHERE ( `status` = 1 )  [ RunTime:0.002254s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\IndexController.class.php on line 53 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.010447s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009545s ]
+SQL: INSERT INTO `spark_order` (`username`,`amount`,`pay_type`,`addtime`,`pay_status`) VALUES ('11',101,'jumoyunzfbWap',1494519074,'N') [ RunTime:0.001022s ]
+
+[ 2017-05-12T00:11:15+08:00 ] 127.0.0.1 /index.php?s=/order/query.html
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.015209s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.017041s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001840s ]
+SQL: SELECT `url` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-05-12T00:11:15+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.010748s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008821s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2017-05-12T00:11:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.010301s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001095s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.011973s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914303 AND 1494518983 ) )  [ RunTime:0.105940s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.051616s ]
+
+[ 2017-05-12T00:12:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007436s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000640s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008153s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914333 AND 1494519013 ) )  [ RunTime:0.037822s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.040440s ]
+
+[ 2017-05-12T00:12:35+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008191s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.011313s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2017-05-12T00:12:37+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008989s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006745s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2017-05-12T00:12:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.126765s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000530s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.075260s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914363 AND 1494519043 ) )  [ RunTime:0.087257s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.046592s ]
+
+[ 2017-05-12T00:12:50+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008372s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.001474s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.010528s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2017-05-12T00:12:51+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007026s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006189s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2017-05-12T00:12:51+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008602s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007275s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2017-05-12T00:12:51+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.010431s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.005939s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-05-12T00:12:52+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008215s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.005839s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2017-05-12T00:12:52+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009835s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.002719s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.010387s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-05-12T00:12:52+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008607s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008502s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2017-05-12T00:12:59+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.035225s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141811 ) LIMIT 1   [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.057318s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2017-05-12T00:13:01+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007379s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.001855s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant WEB_URL - assumed 'WEB_URL' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\2d36a82f96e353449c1a724d27f47674.php 第 260 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2017-05-12T00:13:06+08:00 ] 127.0.0.1 /index.php?s=/Index/ordersubmit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `spark_config` [ RunTime:0.017843s ]
+SQL: SELECT `type`,`name`,`value` FROM `spark_config` WHERE ( `status` = 1 )  [ RunTime:0.001025s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\IndexController.class.php on line 53 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007771s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006774s ]
+SQL: INSERT INTO `spark_order` (`username`,`amount`,`pay_type`,`addtime`,`pay_status`) VALUES ('11',101,'jumoyunzfbWap',1494519186,'N') [ RunTime:0.000570s ]
+
+[ 2017-05-12T00:13:06+08:00 ] 127.0.0.1 /index.php?s=/order/query.html
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.010841s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.010995s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000437s ]
+SQL: SELECT `url` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2017-05-12T00:13:06+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008098s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007422s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-05-12T00:13:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006700s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000909s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006779s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914393 AND 1494519073 ) )  [ RunTime:0.040900s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.038930s ]
+
+[ 2017-05-12T00:13:38+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006295s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008769s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000634s ]
+
+[ 2017-05-12T00:13:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006081s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000564s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006642s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914423 AND 1494519103 ) )  [ RunTime:0.036261s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.033090s ]
+
+[ 2017-05-12T00:14:02+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007357s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006725s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000504s ]
+
+[ 2017-05-12T00:14:04+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.040161s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008257s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000475s ]
+
+[ 2017-05-12T00:14:05+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006860s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006214s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000410s ]
+
+[ 2017-05-12T00:14:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006968s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000936s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006649s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914453 AND 1494519133 ) )  [ RunTime:0.044056s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.047429s ]
+
+[ 2017-05-12T00:14:21+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007154s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007352s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-05-12T00:14:22+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006825s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006813s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-05-12T00:14:38+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008176s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008358s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2017-05-12T00:14:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.043221s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000766s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.022262s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914483 AND 1494519163 ) )  [ RunTime:0.038438s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037752s ]
+
+[ 2017-05-12T00:15:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.006230s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000657s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007007s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914513 AND 1494519193 ) )  [ RunTime:0.038553s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.032790s ]
+
+[ 2017-05-12T00:15:32+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009198s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007042s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2017-05-12T00:15:33+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006529s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008950s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-05-12T00:15:33+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.035862s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006229s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2017-05-12T00:15:34+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.013457s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141812 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.015700s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2017-05-12T00:15:35+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006241s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Use of undefined constant WEB_URL - assumed 'WEB_URL' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\2d36a82f96e353449c1a724d27f47674.php 第 260 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2017-05-12T00:15:37+08:00 ] 127.0.0.1 /index.php?s=/Index/ordersubmit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `spark_config` [ RunTime:0.008259s ]
+SQL: SELECT `type`,`name`,`value` FROM `spark_config` WHERE ( `status` = 1 )  [ RunTime:0.001469s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\IndexController.class.php on line 53 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007851s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006932s ]
+SQL: INSERT INTO `spark_order` (`username`,`amount`,`pay_type`,`addtime`,`pay_status`) VALUES ('11',306,'jumoyunzfbWap',1494519337,'N') [ RunTime:0.000758s ]
+
+[ 2017-05-12T00:15:38+08:00 ] 127.0.0.1 /index.php?s=/order/query.html
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.013204s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.014687s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000763s ]
+SQL: SELECT `url` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-05-12T00:15:38+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.011981s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.012769s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2017-05-12T00:15:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008183s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000735s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007646s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914543 AND 1494519223 ) )  [ RunTime:0.046625s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037067s ]
+
+[ 2017-05-12T00:16:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007103s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000775s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006786s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914573 AND 1494519253 ) )  [ RunTime:0.040549s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037177s ]
+
+[ 2017-05-12T00:16:30+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.016216s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007740s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-05-12T00:16:31+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.111213s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.058361s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2017-05-12T00:16:31+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007309s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008652s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-05-12T00:16:31+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006952s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006130s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2017-05-12T00:16:32+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006653s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007182s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-05-12T00:16:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007270s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000714s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007009s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914603 AND 1494519283 ) )  [ RunTime:0.038468s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035185s ]
+
+[ 2017-05-12T00:17:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007113s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000514s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008408s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914633 AND 1494519313 ) )  [ RunTime:0.038070s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.034328s ]
+
+[ 2017-05-12T00:17:38+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.008923s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141813 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008343s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-05-12T00:17:42+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008477s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Use of undefined constant WEB_URL - assumed 'WEB_URL' D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\2d36a82f96e353449c1a724d27f47674.php 第 260 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2017-05-12T00:17:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008706s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.001436s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.068323s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914663 AND 1494519343 ) )  [ RunTime:0.042696s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.037431s ]
+
+[ 2017-05-12T00:17:46+08:00 ] 127.0.0.1 /index.php?s=/Index/ordersubmit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `spark_config` [ RunTime:0.007738s ]
+SQL: SELECT `type`,`name`,`value` FROM `spark_config` WHERE ( `status` = 1 )  [ RunTime:0.001401s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\IndexController.class.php on line 53 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.018097s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.011547s ]
+SQL: INSERT INTO `spark_order` (`username`,`amount`,`pay_type`,`addtime`,`pay_status`) VALUES ('11',306,'jumoyunzfbWap',1494519466,'N') [ RunTime:0.000819s ]
+
+[ 2017-05-12T00:17:46+08:00 ] 127.0.0.1 /index.php?s=/order/query.html
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009842s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141814 ) LIMIT 1   [ RunTime:0.001957s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.011888s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000767s ]
+SQL: SELECT `url` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2017-05-12T00:17:59+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.015132s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141814 ) LIMIT 1   [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.016406s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.002993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-05-12T00:18:13+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.007735s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000632s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.006480s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914693 AND 1494519373 ) )  [ RunTime:0.039684s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.035147s ]
+
+[ 2017-05-12T00:18:36+08:00 ] 127.0.0.1 /index.php/Jumiyun/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009443s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 141814 ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007102s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'jumoyunzfbWap' ) LIMIT 1   [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2017-05-12T00:18:43+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `spark_menu` [ RunTime:0.008573s ]
+SQL: SELECT * FROM `spark_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000679s ]
+SQL: SELECT `id` FROM `spark_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009368s ]
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1493914723 AND 1494519403 ) )  [ RunTime:0.073162s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `spark_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.048027s ]
+

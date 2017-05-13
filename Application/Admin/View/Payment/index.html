@@ -1,0 +1,151 @@
+<extend name="Public/base"/>
+
+
+
+<block name="body">
+    <style>
+        .btn_active{
+            background: #00A1CB;
+        }
+        .fl a:hover{
+            background: #00A1CB;
+        }
+    </style>
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            支付方式
+        </h2>
+    </div>
+
+    <!-- 按钮工具栏 -->
+    <div class="cf">
+        <div class="fl">
+            <a   id="startPay"  href="###"  class="btn">批量开启</a>
+            <a    href="{:U('Payment/sort')}"  class="btn">排序</a>
+            <a  href="{:U('Payment/getFile')}" class="btn">获取支付接口</a>
+
+        </div>
+
+        <!-- 高级搜索 -->
+
+    </div>
+
+
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table class="ztable">
+            <thead>
+            <tr>
+                <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+                <th class="">支付方式</th>
+                <th class="">支付名称</th>
+                <th class="">支付类型</th>
+                <th class="">是否启用</th>
+                <th class="">支付网址</th>
+
+                <th class="">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <volist name="payment" id="vo">
+                <tr>
+                    <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}" <if condition="$vo.status eq 'Y'"> checked</if> /></td>
+                    <td>{$vo.method} </td>
+                    <td>{$vo.name}</td>
+                    <td>
+                        <switch name="vo.paytype">
+                            <case value="0">
+                                <span style="color:green">微信</span>
+                            </case>
+                            <case value="1">
+                                <span style="color:blue">支付宝</span>
+                            </case>
+                            <case value="2">
+                                <span style="color:goldenrod">网银</span>
+                            </case>
+                            <case value="3">
+                                <span style="color:green">平台微信</span>
+                            </case>
+                            <case value="6">
+                                <span style="color:green">QQ</span>
+                            </case>
+                            <case value="1">
+                                <span style="color:blue">平台支付宝</span>
+                            </case>
+                            <case value="2">
+                                <span style="color:goldenrod">平台网银</span>
+                            </case>
+                        </switch>
+
+                    </td>
+                    <td>
+                        <if condition="$vo.status eq 'Y'">
+
+                            <a href="{:U('Payment/setCheckOne',array('id'=>$vo['id'],'status'=>'N'))}" class="ajax-get confirm"> 启用</a>
+                            <else/>
+                            <a href="{:U('Payment/setCheckOne',array('id'=>$vo['id'],'status'=>'Y'))}" style="color:Red;" class="ajax-get confirm"> 禁用</a>
+                            </if>
+
+                    </td>
+                    <td>
+                        {$vo.url}
+
+                    </td>
+
+                    <td>
+                        <a href="{:U('Payment/edit',array('id'=>$vo['id']))}">编辑</a>
+                        <a href="{:U('Payment/testPay',array('id'=>$vo['id']))}" target="_blank">测试支付</a>
+
+                    </td>
+
+
+
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <!-- 分页 -->
+    <div class="page">
+        {$order._page}
+    </div>
+    </div>
+
+</block>
+<block name="script">
+
+    <script type="text/javascript">
+        $('#startPay').click(function(){
+            var check = [];
+            $('.ztable input:checkbox:checked').each(function(index,e){
+
+                check.push($(this).val())
+            });
+            // check =$.serialize(check);
+            console.log(check);
+            if (check.length ==0){
+                updateAlert('请勾选需要开启的支付方式');return false;
+            };
+            $.post("{:U('Payment/setCheck')}", { ids:check},
+                    function(data){
+
+                        if(data.status){
+                            updateAlert(data.info,'alert-success');
+                        }else{
+                            updateAlert(data.info,'alert-error');
+                        }
+                        setTimeout(function(){
+                            location.href="{:U('Payment/index')}";
+                        },2000)
+
+                    });
+        });
+
+        highlight_subnav('{:U("Payment/index")}');
+    </script>
+</block>
