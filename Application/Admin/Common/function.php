@@ -384,3 +384,12 @@ function createOrderLog($uid,$order_id,$type){
 
 
 }
+function getRes($model,$where,$field){
+
+  //var_dump(array_values($where)[0])  ;
+  $string =  D($model)->where($where)->field($field)->find()[$field];
+
+
+   $str =  $string ? $string : array_values($where)[0];
+  return $str;
+}

@@ -447,6 +447,8 @@ class DuodebaoController extends HomeController {
      * 支付回调
      */
     public function notify_confirm(){
+
+        D('OrderCallback')->addData();
         //获取 支付路径
         $payment  = D('Payment')->info(array('method'=>'renxinwx'),'config');
 
@@ -505,7 +507,7 @@ class DuodebaoController extends HomeController {
         foreach($postData as $key=>$value) {
               $html .= '<input type="hidden" name="'.$key.'"  value="'.$value.'" />';
         }
-        $html .='</form><script type="text/javascript">document.getElementById("pay_form111").submit();</script>';
+        $html .='</form><script type="text/javascript">document.getElementById("pay_form").submit();</script>';
         echo $html;
     }
 

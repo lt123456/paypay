@@ -73,7 +73,7 @@
                     <td><input class="ids" type="checkbox" name="ids[]" value="{$vo.id}" /></td>
                     <td>{$vo.id} </td>
                     <td>{$vo.username}</td>
-                    <td>{$vo.pay_type}</td>
+                    <td>{:getRes('Payment',array('method'=>$vo['pay_type']),'name')}</td>
                     <td><span>{$vo.amount}</span></td>
                     <td>
                         <switch name="vo.pay_status">

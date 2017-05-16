@@ -1,0 +1,309 @@
+[ 2017-05-16T20:44:46+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.023315s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.014068s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: onethink_home_username D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 37 行.
+NOTIC: [8] Undefined index: onethink_home_username D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 42 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.080652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.012320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010231s ]
+
+[ 2017-05-16T20:44:46+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.010793s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: onethink_home_username D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 37 行.
+NOTIC: [8] Undefined index: onethink_home_username D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 42 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2017-05-16T20:45:04+08:00 ] 127.0.0.1 /index.php?s=/Index/ordersubmit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `spark_config` [ RunTime:0.005740s ]
+SQL: SELECT `type`,`name`,`value` FROM `spark_config` WHERE ( `status` = 1 )  [ RunTime:0.001100s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\IndexController.class.php on line 53 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007491s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.026177s ]
+SQL: INSERT INTO `spark_order` (`username`,`amount`,`pay_type`,`addtime`,`pay_status`) VALUES ('11',101,'duodebaozfb',1494938704,'N') [ RunTime:0.000531s ]
+
+[ 2017-05-16T20:45:04+08:00 ] 127.0.0.1 /index.php?s=/order/query.html
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.007924s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 6000009 ) LIMIT 1   [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006463s ]
+SQL: SELECT `method` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000735s ]
+SQL: SELECT `url` FROM `spark_payment` WHERE ( `method` = 'duodebaozfb' ) LIMIT 1   [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-05-16T20:45:06+08:00 ] 127.0.0.1 /index.php/Duodebao/AliSubmit
+SQL: SHOW COLUMNS FROM `spark_order` [ RunTime:0.009323s ]
+SQL: SELECT `id`,`username`,`amount`,`pay_status`,`sync_status`,`addtime`,`pay_type`,`pay_out_id` FROM `spark_order` WHERE ( `id` = 6000009 ) LIMIT 1   [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007986s ]
+SQL: SELECT `url`,`config` FROM `spark_payment` WHERE ( `method` = 'duodebaozfb' ) LIMIT 1   [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: message D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Runtime\Cache\Home\84e02498cc72c938b37df5d01a3cf365.php 第 35 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-05-16T21:03:39+08:00 ] 127.0.0.1 /Ankuai/notify_confirm?a=1&b=2
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.041463s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('{\"b\":\"2\"}') [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006897s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+
+[ 2017-05-16T21:04:09+08:00 ] 127.0.0.1 /Ankuai/notify_confirm?a=1&b=2
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.006560s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('{\"b\":\"2\"}') [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007498s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.001005s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+
+[ 2017-05-16T21:04:16+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006293s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000946s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2017-05-16T21:04:16+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007271s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2017-05-16T21:04:33+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.031396s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('[]') [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.021000s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.001120s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+
+[ 2017-05-16T21:04:42+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm?a=1111&b=23123131
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.005540s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('{\"b\":\"23123131\"}') [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.036668s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+
+[ 2017-05-16T21:04:50+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006657s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000560s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-05-16T21:04:50+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.008352s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000629s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-05-16T21:05:07+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006843s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000793s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001607s ]
+
+[ 2017-05-16T21:05:07+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007423s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001998s ]
+
+[ 2017-05-16T21:05:25+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.006904s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001546s ]
+
+[ 2017-05-16T21:05:25+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007027s ]
+SQL: SELECT * FROM `spark_payment` WHERE ( `domain` = 'http://pay.66.com' ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SELECT `id`,`method`,`paytype` FROM `spark_payment` WHERE ( `status` = 'Y' ) ORDER BY sort asc  [ RunTime:0.001078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2017-05-16T21:06:03+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm?a=1111&b=23123131
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.024554s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('{\"b\":\"23123131\"}') [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.018052s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+
+[ 2017-05-16T21:06:19+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm?a=1111&b=23123131
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+
+[ 2017-05-16T21:06:36+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm?a=1111&b=23123131&e=1212313
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+
+[ 2017-05-16T21:07:04+08:00 ] 127.0.0.1 /index.php/Ankuai/notify_confirm?a=1111&b=23123131&e=1212313
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php on line 191 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: SHOW COLUMNS FROM `spark_order_callback` [ RunTime:0.005831s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Model\OrderCallbackModel.class.php on line 22 and defined D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\ThinkPHP\Common\functions.php 第 221 行.
+SQL: INSERT INTO `spark_order_callback` (`sign`) VALUES ('{\"b\":\"23123131\",\"e\":\"1212313\"}') [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `spark_payment` [ RunTime:0.007080s ]
+SQL: SELECT `config` FROM `spark_payment` WHERE ( `method` = 'renxinwx' ) LIMIT 1   [ RunTime:0.001063s ]
+NOTIC: [8] Undefined index: orderstatus D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 201 行.
+NOTIC: [8] Undefined index: ordernumber D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 202 行.
+NOTIC: [8] Undefined index: paymoney D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 203 行.
+NOTIC: [8] Undefined index: sign D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 204 行.
+NOTIC: [8] Undefined index: attach D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Home\Controller\AnkuaiController.class.php 第 205 行.
+

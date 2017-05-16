@@ -85,109 +85,53 @@
             
 
             
-    <style>
-        .btn_active{
-            background: #00A1CB;
-        }
-        .fl a:hover{
-            background: #00A1CB;
-        }
-    </style>
-    <!-- 标题 -->
-    <div class="main-title">
-        <h2>
-            订单管理(今日订单数: <span style="color:Red"><?php echo ($today); ?></span>今日交易金额: <span style="color:Red"><?php echo ($today_money); ?></span> 总订单数: <span style="color:Red"><?php echo ($total); ?></span>总订单金额: <span style="color:Red"><?php echo ($total_money); ?></span>)
-        </h2>
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>行为列表</h2>
+	</div>
+
+    <div>
+        <button class="btn" id="action_add" url="<?php echo U('user/addaction');?>">新 增</button>
+        <button class="btn ajax-post" target-form="ids" url="<?php echo u('setstatus',array('status'=>1));?>" >启 用</button>
+        <button class="btn ajax-post" target-form="ids" url="<?php echo u('setstatus',array('status'=>0));?>">禁 用</button>
+        <button class="btn ajax-post confirm" target-form="ids" url="<?php echo U('setStatus',array('status'=>-1));?>">删 除</button>
     </div>
+	<!-- 数据列表 -->
+	<div class="data-table">
+<table class="">
+    <thead>
+        <tr>
+		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+		<th class="">编号</th>
+		<th class="">标识</th>
+		<th class="">名称</th>
+		<th class="">类型</th>
+		<th class="">规则</th>
+		<th class="">状态</th>
+		<th class="">操作</th>
+		</tr>
+    </thead>
+    <tbody>
+		<?php if(is_array($_list)): $i = 0; $__LIST__ = $_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+            <td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
+			<td><?php echo ($vo["id"]); ?> </td>
+			<td><?php echo ($vo["name"]); ?></td>
+			<td><a href="<?php echo U('editAction?id='.$vo['id']);?>"><?php echo ($vo["title"]); ?></a></td>
+			<td><span><?php echo get_action_type($vo['type']);?></span></td>
+			<td><?php echo ($vo["remark"]); ?></td>
+			<td><?php echo ($vo["status_text"]); ?></td>
+			<td><a href="<?php echo U('User/editAction?id='.$vo['id']);?>">编辑</a>
+				<a href="<?php echo U('User/setStatus?Model=action&ids='.$vo['id'].'&status='.abs(1-$vo['status']));?>" class="ajax-get"><?php echo (show_status_op($vo["status"])); ?></a>
+				<a href="<?php echo U('User/setStatus?Model=action&status=-1&ids='.$vo['id']);?>" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	</tbody>
+    </table>
 
-    <!-- 按钮工具栏 -->
-    <div class="cf">
-        <div class="fl">
-            <a    href="<?php echo U("Order/index");?>" <?php if(I('pay') == ''): ?>class="btn btn_active"<?php else: ?>class="btn"<?php endif; ?> > 全部订单</a>
-            <a    href="<?php echo U("Order/index",array('pay'=>'Y'));?>" <?php if(I('pay') == 'Y'): ?>class="btn btn_active"<?php else: ?>class="btn"<?php endif; ?> > 成功订单</a>
-            <a    href="<?php echo U("Order/index",array('pay'=>'N'));?>" <?php if(I('pay') == 'N'): ?>class="btn btn_active"<?php else: ?>class="btn"<?php endif; ?> > 失败订单</a>
-            <a    href="<?php echo U("Order/index",array('pay'=>'T'));?>" <?php if(I('pay') == 'T'): ?>class="btn btn_active"<?php else: ?>class="btn"<?php endif; ?> > 非法攻击订单</a>
-            <a    href="<?php echo U('Execl/expOrder');?>" class="btn"> Execl导出订单</a>
-        </div>
-
-        <!-- 高级搜索 -->
-        <div class="search-form fr cf">
-            <div class="sleft">
-                <!--<div class="drop-down">-->
-                    <?php  $type= I('pay_type');?>
-                    <select name="pay_type" class="search-input">
-                        <option value="">请选择支付方式</option>
-                        <?php if(is_array($payment)): $i = 0; $__LIST__ = $payment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["method"]); ?>" <?php if($type == $vo['method']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </select>
-                <!--</div>-->
-                <input type="text" id="time-start" name="time-start" class="text input-2x" value="<?php echo I('time-start');?>" placeholder="起始时间"  style="float: left;"/>
-
-                <input type="text" id="time-end" name="time-end" class="text input-2x" value="<?php echo I('time-end');?>" placeholder="结束时间" style="float: left;" />
-                <input type="text" name="title" class="search-input" value="<?php echo I('title');?>" placeholder="请输入订单编号/用户名">
-                <a class="sch-btn" href="javascript:;" id="search" url="<?php echo U('Order/index','pay='.I('pay',0));?>"><i class="btn-search"></i></a>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- 数据表格 -->
-    <div class="data-table">
-        <table class="">
-            <thead>
-            <tr>
-                <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
-                <th class="">订单号</th>
-                <th class="">用户名</th>
-                <th class="">支付方式</th>
-                <th class="">金额</th>
-                <th class="">是否支付</th>
-                <th class="">是否同步</th>
-                <th class="">创建时间</th>
-                <th class="">操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php if(is_array($order["lists"])): $i = 0; $__LIST__ = $order["lists"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                    <td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
-                    <td><?php echo ($vo["id"]); ?> </td>
-                    <td><?php echo ($vo["username"]); ?></td>
-                    <td><?php echo getRes('Payment',array('method'=>$vo['pay_type']),'name');?></td>
-                    <td><span><?php echo ($vo["amount"]); ?></span></td>
-                    <td>
-                        <?php switch($vo["pay_status"]): case "N": ?><span style="color:Red">未支付</span><?php break;?>
-                            <?php case "Y": ?><span style="color:green">已支付</span><?php break; endswitch;?>
-
-                    </td>
-
-                    <td>
-                        <?php switch($vo["sync_status"]): case "N": ?><span style="color:Red">未同步</span><?php break;?>
-                            <?php case "Y": ?><span style="color:green">已同步</span><?php break; endswitch;?>
-
-                    </td>
-
-
-                    <td><span><?php echo (time_format($vo["addtime"])); ?></span></td>
-
-                    <td>
-                        <?php if($vo["pay_status"] == N): ?><a href="<?php echo U('Order/updateStatus',array('id'=>$vo['id'],'pay_status'=>'Y'));?>" class="ajax-get confirm">设置支付</a><?php endif; ?>
-                        <?php if($vo["pay_status"] == Y and $vo["sync_status"] == N): ?><a href="<?php echo U('Order/updateStatus',array('id'=>$vo['id'],'sync_status'=>'Y'));?>" class="ajax-get confirm">设置同步平台</a><?php endif; ?>
-                        <?php if($vo["pay_status"] == F): ?><a href="<?php echo U('Order/updateStatus',array('id'=>$vo['id'],'pay_status'=>'T'));?>" class="ajax-get confirm">解除非法攻击</a><?php endif; ?>
-
-                    </td>
-
-                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-            </tbody>
-        </table>
-
-
-    </div>
-
-    <!-- 分页 -->
-    <div class="page">
-        <?php echo ($order["_page"]); ?>
-    </div>
-    </div>
+	</div>
+	<!-- 分页 -->
+	<div class="page"><?php echo ($_page); ?></div>
+	<!-- /分页 -->
 
 
         </div>
@@ -311,77 +255,13 @@
 
     </script>
     
-    <link href="/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
-    <?php if(C('COLOR_STYLE')=='blue_color') echo '<link href="/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">'; ?>
-    <link href="/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-        $(function(){
-            //搜索功能
-            $("#search").click(function(){
-                var url = $(this).attr('url');
-                var status = $("#sch-sort-txt").attr("data");
-                var query  = $('.search-form').find('input').serialize();
-                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
-                query = query.replace(/^&/g,'');
-
-                var sel  = $('.search-form').find('select').serialize();
-                sel = sel.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
-                sel = sel.replace(/^&/g,'');
-                if(status != ''){
-                    query += 'status=' + status + "&" + query;
-                }
-                if( url.indexOf('?')>0 ){
-                    url += '&' + query;
-                }else{
-                    url += '?' + query;
-                }
-                if(sel != ''){
-                    url += '&' + sel;
-                }
-                window.location.href = url;
-            });
-
-            /* 状态搜索子菜单 */
-            $(".search-form").find(".drop-down").hover(function(){
-                $("#sub-sch-menu").removeClass("hidden");
-            },function(){
-                $("#sub-sch-menu").addClass("hidden");
-            });
-            $("#sub-sch-menu li").find("a").each(function(){
-                $(this).click(function(){
-                    var text = $(this).text();
-                    $("#sch-sort-txt").text(text).attr("data",$(this).attr("value"));
-                    $("#sub-sch-menu").addClass("hidden");
-                })
-            });
-
-            //回车自动提交
-            $('.search-form').find('input').keyup(function(event){
-                if(event.keyCode===13){
-                    $("#search").click();
-                }
-            });
-
-            $('#time-start').datetimepicker({
-                format: 'yyyy-mm-dd HH:ii:ss',
-                language:"zh-CN",
-                minView:2,
-                autoclose:true
-            });
-
-            $('#time-end').datetimepicker({
-                format: 'yyyy-mm-dd hh:ii:ss',
-                language:"zh-CN",
-                minView:2,
-                autoclose:true,
-                pickerPosition:'bottom-left'
-            })
-
-        })
-        highlight_subnav('<?php echo U("Order/index");?>');
-    </script>
+<script type="text/javascript">
+$(function(){
+	$("#action_add").click(function(){
+		window.location.href = $(this).attr('url');
+	})
+})
+</script>
 
 </body>
 </html>
