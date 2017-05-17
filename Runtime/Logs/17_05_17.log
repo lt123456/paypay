@@ -5287,3 +5287,23 @@ SQL: SELECT `id`,`pay_status` FROM `pay_order` WHERE ( `pay_status` = 'Y' ) AND 
 NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
 SQL: SELECT `id`,`pay_status` FROM `pay_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.000967s ]
 
+[ 2017-05-17T21:52:55+08:00 ] 127.0.0.1 /master.php?s=/Admin/getlistAction.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `pay_menu` [ RunTime:0.089036s ]
+SQL: SELECT * FROM `pay_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000484s ]
+SQL: SELECT `id` FROM `pay_menu` WHERE ( url like '%Admin/getlistaction%' ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `pay_menu` [ RunTime:0.055286s ]
+SQL: SELECT `id`,`pid`,`title` FROM `pay_menu` WHERE ( id=134 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT `id`,`pid`,`title` FROM `pay_menu` WHERE ( id=122 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT DISTINCT  `group` FROM `pay_menu` WHERE ( pid = 122 )  [ RunTime:0.000392s ]
+SQL: SELECT `id`,`url` FROM `pay_menu` WHERE ( `pid` = 122 ) AND ( `hide` = 0 )  [ RunTime:0.000519s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `pay_menu` WHERE ( `group` = '订单管理' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000449s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `pay_menu` WHERE ( `group` = '支付方式' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000330s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `pay_menu` WHERE ( `group` = '订单' ) AND ( `pid` = 122 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `pay_order` [ RunTime:0.006371s ]
+SQL: SELECT `id`,`pay_status` FROM `pay_order` WHERE ( `pay_status` = 'Y' ) AND ( `sync_status` = 'N' ) AND (  (`addtime` BETWEEN 1494424375 AND 1495029055 ) )  [ RunTime:0.000322s ]
+NOTIC: [8] Undefined variable: time D:\xampp\htdocs\newpay\onethink_1.0_140202\wwwroot\Application\Admin\Controller\AdminController.class.php 第 467 行.
+SQL: SELECT `id`,`pay_status` FROM `pay_order` WHERE ( `pay_status` = 'F' ) AND ( `addtime` < null )  [ RunTime:0.000234s ]
+
