@@ -182,8 +182,7 @@ class DuodebaoController extends HomeController {
 
         $postdata = $postdata . 'product_name=' . $product_name.'&';
         $postdata = $postdata . 'client_ip='.$client_ip;
-
-//echo "发送到智付的数据为：" . "<br>" . $postdata . "<br>";die;
+//        echo "发送到智付的数据为：" . "<br>" . $postdata . "<br>";die;
 
         $ch = curl_init ();
 //
@@ -432,6 +431,7 @@ class DuodebaoController extends HomeController {
                 'redo_flag'=>$redo_flag
             );
 
+
             $this->form($urlApi,$paramArr);
 
 
@@ -448,35 +448,93 @@ class DuodebaoController extends HomeController {
      */
     public function notify_confirm(){
 
+
         D('OrderCallback')->addData();
         //获取 支付路径
-        $payment  = D('Payment')->info(array('method'=>'renxinwx'),'config');
+        $payment  = D('Payment')->info(array('method'=>'duodebaowx'),'config');
 
-        $config = unserialize($payment['config']);
+        $payment ['payment_config'] = unserialize ( $payment ['payment_config'] );
 
-        $partner = $config['parter'];
-        $tokenKey = $config['private'];
 
-        $orderstatus = $_GET["orderstatus"];
-        $ordernumber = $_GET["ordernumber"];
-        $paymoney = $_GET["paymoney"];
-        $sign = $_GET["sign"];
-        $attach = $_GET["attach"];
-        $signSource = sprintf("partner=%s&ordernumber=%s&orderstatus=%s&paymoney=%s%s", $partner, $ordernumber, $orderstatus, $paymoney,$tokenKey);
-        if ($sign != md5($signSource))//签名正确
-        {
-            die('验签失败');//此处作逻辑处理
+        $pubKey = $payment ['payment_config'] ['public_key'];
+
+        $merchant_code	= $_POST["merchant_code"];
+
+        $interface_version = $_POST["interface_version"];
+
+        $sign_type = $_POST["sign_type"];
+
+        $dinpaySign = base64_decode($_POST["sign"]);
+
+        $notify_type = $_POST["notify_type"];
+
+        $notify_id = $_POST["notify_id"];
+
+        $order_no = $_POST["order_no"];
+
+        $order_time = $_POST["order_time"];
+
+        $order_amount = $_POST["order_amount"];
+
+        $trade_status = $_POST["trade_status"];
+
+        $trade_time = $_POST["trade_time"];
+
+        $trade_no = $_POST["trade_no"];
+
+        $bank_seq_no = $_POST["bank_seq_no"];
+
+        $extra_return_param = $_POST["extra_return_param"];
+
+
+/////////////////////////////   参数组装  /////////////////////////////////
+        /**
+        除了sign_type dinpaySign参数，其他非空参数都要参与组装，组装顺序是按照a~z的顺序，下划线"_"优先于字母
+         */
+
+        $signStr = "";
+
+        if($bank_seq_no != ""){
+            $signStr = $signStr."bank_seq_no=".$bank_seq_no."&";
         }
 
-        if($orderstatus =='1'){
+        if($extra_return_param != ""){
+            $signStr = $signStr."extra_return_param=".$extra_return_param."&";
+        }
 
-            $id =$ordernumber;
+        $signStr = $signStr."interface_version=".$interface_version."&";
 
+        $signStr = $signStr."merchant_code=".$merchant_code."&";
+
+        $signStr = $signStr."notify_id=".$notify_id."&";
+
+        $signStr = $signStr."notify_type=".$notify_type."&";
+
+        $signStr = $signStr."order_amount=".$order_amount."&";
+
+        $signStr = $signStr."order_no=".$order_no."&";
+
+        $signStr = $signStr."order_time=".$order_time."&";
+
+        $signStr = $signStr."trade_no=".$trade_no."&";
+
+        $signStr = $signStr."trade_status=".$trade_status."&";
+
+        $signStr = $signStr."trade_time=".$trade_time;
+
+
+
+
+        $dinpay_public_key = openssl_get_publickey($pubKey);
+
+        $flag = openssl_verify($signStr,$dinpaySign,$dinpay_public_key,OPENSSL_ALGO_MD5);
+
+        if($flag==true){
+            $id =$order_no;
             $order = D('Order')->info(array('id'=>$id));
-
-            if($order['amount'] != $paymoney){
+            if($order['amount'] != $order_amount){
                 D('Order')->updateData(array('id'=>$id),array('pay_status'=>'F'));
-                exit('ok');
+                exit('eposit successful');
             }
 
             if($order['pay_status'] !='Y'){
@@ -484,13 +542,14 @@ class DuodebaoController extends HomeController {
                 $sql = D('Order')->updateData(array('id'=>$id),array('pay_status'=>'Y'));
 
                 if($sql){
-                    echo 'ok';exit;
+                    echo 'eposit successful';exit;
                 }
             }else{
-                echo 'failed';
+                echo 'deposit failed';exit;
             }
-        }else{
-            echo 'failed';
+
+        } else{
+            echo 'deposit failed';exit;
         }
 
     }

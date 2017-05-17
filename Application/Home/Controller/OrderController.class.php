@@ -43,7 +43,7 @@ class OrderController extends HomeController {
                 }
 
                 //获取 支付路径
-                 $payment  = D('Payment')->info(array('method'=>$order['pay_type']),'url');
+                 $payment  = D('Payment')->info(array('method'=>$order['pay_type']),'url,domain');
 
                 if($order['pay_status'] == 'N' && in_array($order['pay_type'],$allowWay)){
                     $this->form($payment,$order);
@@ -66,7 +66,7 @@ class OrderController extends HomeController {
      */
     public function  form($payment,$order){
 
-        echo '<form id="pay_form" method="post" action="'.$payment['url'].'"><input type="hidden" name="orderid"  value="'.$order["id"].'" /><input type="hidden" name="tokenSign"  value="8812662dcf3e5db0247c0f85909363fc" /></form>
+        echo '<form id="pay_form" method="post" action="'.trim($payment['domain']).$payment['url'].'"><input type="hidden" name="orderid"  value="'.$order["id"].'" /><input type="hidden" name="tokenSign"  value="8812662dcf3e5db0247c0f85909363fc" /></form>
 			<script type="text/javascript">
 				document.getElementById("pay_form").submit();
 			</script>';

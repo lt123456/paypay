@@ -111,7 +111,7 @@ class  LikefuController extends HomeController {
     public function notify_confirm(){
         D('OrderCallback')->addData();
         //获取 支付路径
-        $payment  = D('Payment')->info(array('method'=>'juyuanwx'),'config');
+        $payment  = D('Payment')->info(array('method'=>'likefuwx'),'config');
 
         $config = unserialize($payment['config']);
 

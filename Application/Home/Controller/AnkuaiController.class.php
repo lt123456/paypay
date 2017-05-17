@@ -190,7 +190,7 @@ class  AnkuaiController extends HomeController {
 
         D('OrderCallback')->addData();
         //获取 支付路径
-        $payment  = D('Payment')->info(array('method'=>'renxinwx'),'config');
+        $payment  = D('Payment')->info(array('method'=>'ankuaiwx'),'config');
 
         $config = unserialize($payment['config']);
 
