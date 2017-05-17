@@ -64,7 +64,7 @@ class  FuqianController extends HomeController {
 
         $ptype =0;
         $notifyurl = U('Fuqian/notify_confirm');
-        $returlurl = U('Order/success');
+        $returlurl = 'http://'.$_SERVER['SERVER_NAME'].'/index.php/Order/success';
         $signText = 'userid'.$UserID.'orderid'.$orderid.'btype'.$btype.'ptype'.$ptype.'value'.$value.'notifyurl'.$notifyurl.'returnurl'.$returlurl.$UserKey;
         $signValue = strtolower(md5($signText));
 

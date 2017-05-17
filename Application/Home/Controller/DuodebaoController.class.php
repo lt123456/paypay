@@ -453,7 +453,7 @@ class DuodebaoController extends HomeController {
         //获取 支付路径
         $payment  = D('Payment')->info(array('method'=>'duodebaowx'),'config');
 
-        $payment ['payment_config'] = unserialize ( $payment ['payment_config'] );
+        $payment ['payment_config'] = unserialize ($payment ['config']);
 
 
         $pubKey = $payment ['payment_config'] ['public_key'];

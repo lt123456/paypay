@@ -62,7 +62,7 @@ class  JuyuanController extends HomeController {
 
         $attach = 'PAY';
         $apiurl = "http://pay.juypay.com/PayBank.aspx";
-        $callbackurl = U('Juyuan/notify_confirm');
+        $callbackurl = 'http://'.$_SERVER['SERVER_NAME'].'/index.php/Juyuan/notify_confirm';
         $hrefbackurl = U('Order/success');
         $signSource = sprintf("partner=%s&banktype=%s&paymoney=%s&ordernumber=%s&callbackurl=%s%s", $partner, $banktype, $paymoney, $ordernumber, $callbackurl, $key);
         $sign = md5($signSource);//32位小写MD5签名值，UTF-8编码
