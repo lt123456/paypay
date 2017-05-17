@@ -710,7 +710,9 @@ function layout($layout) {
  * @param boolean $domain 是否显示域名
  * @return string
  */
-function U($url='',$vars='',$suffix=true,$domain='pay.66.com') {
+function U($url='',$vars='',$suffix=true) {
+    $domain=$_SERVER['SERVER_NAME'];
+
     // 解析URL
     $info   =  parse_url($url);
     $url    =  !empty($info['path'])?$info['path']:ACTION_NAME;
