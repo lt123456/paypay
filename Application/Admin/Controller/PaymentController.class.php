@@ -148,8 +148,6 @@ class PaymentController extends AdminController {
 
         $payUrl = trim($info['domain'].$info['url'],'');
 
-//        var_dump($orderId);
-//        var_dump($payUrl);
         $this->form($payUrl,$orderId);
 
 

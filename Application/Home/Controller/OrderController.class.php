@@ -58,7 +58,6 @@ class OrderController extends HomeController {
             $this->error('请注意姿势');
         }
 
-
     }
 
     /**

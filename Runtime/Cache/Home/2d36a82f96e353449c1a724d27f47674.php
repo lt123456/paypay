@@ -206,7 +206,7 @@
                             </div>
                         </div><?php break;?>
                     <?php case "101": ?><span class="title" style="text-align: center;">
-                                <img style="height: 40px;" src="/Public/Home/images/mobile/alipy.jpg" alt="">
+                                <img style="height: 40px;" src="/Public/Home/images/mobile/alipay.jpg" alt="">
                           </span>
                         <div class="content">
                             <span>支付宝Wap</span><br>

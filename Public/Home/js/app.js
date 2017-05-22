@@ -6,6 +6,12 @@ $('.kuaijie').click( function()
     $(this).css('color','#fff').css('background-color','#2196F3');
     return false;
 });
+$('.even_pay').click( function()
+{
+    $(this).find('input').attr('checked', true);
+    $("#bank_code").val( $("input[type=radio]:checked").attr('btype') );
+});
+
 
 
 $(".oclass").change(function() {

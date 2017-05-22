@@ -17,9 +17,9 @@ use Think\Controller;
 class HomeController extends Controller {
 
 	/* 空操作，用于输出404页面 */
-	public function _empty(){
-		$this->redirect('Index/index');
-	}
+		public function _empty(){
+			$this->redirect('Index/index');
+		}
 
 
     protected function _initialize(){

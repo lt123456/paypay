@@ -212,7 +212,7 @@ class DuodebaoController extends HomeController {
             return $pic;
 
         }else{
-            return  $this->error($res->response->result_desc);
+            return  $this->error($res->response->resp_desc);
 
         }
 
